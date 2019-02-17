@@ -1,0 +1,41 @@
+﻿@using WebApplication2.Models
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@if (Roles.IsUserInRole("Enquiry") && Model.Service == Services.Enquiry)
+{
+    @Html.Partial("_Edit")
+
+}
+else if (Roles.IsUserInRole("Deposit") && Model.Service == Services.Deposit)
+{
+    @Html.Partial("_Edit")
+}
+else if (Roles.IsUserInRole("Funds Transfer") && Model.Service == Services.FundsTransfer)
+{
+    @Html.Partial("_Edit")
+}
+else if (Roles.IsUserInRole("Grievance") && Model.Service == Services.Grievance)
+{
+    @Html.Partial("_Edit")
+}
+else if (Roles.IsUserInRole("New Account") && Model.Service == Services.NewAccount)
+{
+    @Html.Partial("_Edit")
+}
+else if (Roles.IsUserInRole("Loans") && Model.Service == Services.Loans)
+{
+    @Html.Partial("_Edit")
+}
+else if (Roles.IsUserInRole("Admin"))
+{
+    @Html.Partial("_Edit")
+}
+else
+{
+    <text>Access Denied</text>
+}

@@ -1,0 +1,13 @@
+admin
+subham@domain.com	$Ubham1997
+
+
+staff1@domain.com	$Taff1       Deposit
+staff2@domain.com	$Taff2       Enquiry
+staff3@domain.com	$Taff3       Funds Transfer
+staff4@domain.com	$Taff4       Grievance
+staff5@domain.com	$Taff5       Loans
+staff6@domain.com	$Taff6       New Account
+
+
+

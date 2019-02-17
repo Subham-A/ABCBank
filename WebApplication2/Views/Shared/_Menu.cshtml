@@ -1,0 +1,33 @@
+﻿@if (Roles.IsUserInRole("Enquiry"))
+{
+    <li>@Html.ActionLink("Get Pending Requests", "GetEnquiry", "Enquiry")</li>
+}
+else if (Roles.IsUserInRole("Deposit"))
+{
+    <li>@Html.ActionLink("Get Pending Requests", "GetDeposit", "Deposit")</li>
+}
+else if (Roles.IsUserInRole("Grievance"))
+{
+    <li>@Html.ActionLink("Get Pending Requests", "GetGrievance", "Grievance")</li>
+}
+else if (Roles.IsUserInRole("Loans"))
+{
+    <li>@Html.ActionLink("Get Pending Requests", "GetLoans", "Loans")</li>
+}
+else if (Roles.IsUserInRole("New Account"))
+{
+    <li>@Html.ActionLink("Get Pending Requests", "GetNewAccount", "NewAccount")</li>
+}
+else if (Roles.IsUserInRole("Funds Transfer"))
+{
+    <li>@Html.ActionLink("Get Pending Requests", "GetFundsTransfer", "FundsTransfer")</li>
+}
+else if (Roles.IsUserInRole("Admin"))
+{
+    <li>@Html.ActionLink("Get Pending Requests", "GetPendingRequest", "Admin")</li>
+    <li>@Html.ActionLink("Get Fullfilled Requests", "GetFullfilledRequest", "Admin")</li>
+}
+else
+{
+    <li>@Html.ActionLink("New Request", "NewRequest", "Home")</li>
+}
